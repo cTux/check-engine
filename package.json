@@ -1,10 +1,14 @@
 {
-  "name": "check-engine",
-  "version": "1.11.0",
+  "name": "ctux-check-engine",
+  "version": "1.12.0",
   "description": "A system version checker in Node.js",
   "main": "./lib/checkSystem.js",
   "bin": {
     "check-engine": "./bin/check-engine.js"
+  },
+  "engines": {
+    "node": "^20",
+    "pnpm": "^8"
   },
   "scripts": {
     "start": "node bin/check-engine.js",
@@ -13,20 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohlsen/check-engine.git"
+    "url": "git+https://github.com/cTux/check-engine.git"
   },
   "keywords": [
     "node"
   ],
-  "author": "Mike Ohlsen",
+  "author": "Viacheslav Miroshko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mohlsen/check-engine/issues"
+    "url": "https://github.com/cTux/check-engine/issues"
   },
-  "homepage": "https://github.com/mohlsen/check-engine#readme",
-  "engines": {
-    "node": ">=10"
-  },
+  "homepage": "https://github.com/cTux/check-engine#readme",
   "dependencies": {
     "bluebird": "3.7.2",
     "colors": "1.4.0",

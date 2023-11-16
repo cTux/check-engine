@@ -26,6 +26,9 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
 
+      - name: Setting pnpm config
+        run: pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+
       - name: Installing dependencies
         run: pnpm i
 
